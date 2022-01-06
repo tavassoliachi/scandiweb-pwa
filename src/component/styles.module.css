@@ -22,11 +22,12 @@
     justify-content:space-evenly;
     align-items: "center";
     margin-left:40px;
-    transform:translateY(-11px)
+    transform:translateY(-11px);
 }
 .cont{
     display:flex;
-    flex-direction:column
+    flex-direction:column;
+    background-color: #eee;
 }
 .circle{
     border-radius:50%;
@@ -35,11 +36,14 @@
     font-size:17px;
     color:white;
     width:35px;
-    height:35px
-
+    height:35px;
+    margin:0 12px;
+    z-index: 2;
 }
+
 .txt{
-    transform:translateX(-10px);
+    position: absolute;
     font-weight:bold;
-    transform:translate(-10px,8px)
+    transform:translate(3px,18px);
+    height:2px;
 }

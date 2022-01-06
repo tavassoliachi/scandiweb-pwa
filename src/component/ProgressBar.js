@@ -15,7 +15,7 @@ export default class ProgressBar extends Component {
             [DETAILS_STEP]:{displayText:"Order Details",n:3,visible:false}
         }
         const stepList=Object.keys(checkoutSteps)
-        const progressPerStep=100/stepList.length
+        const progressPerStep=100/stepList.length 
         return (
             <Step key={this.props.step} stepList={stepList} progressPerStep={progressPerStep} steps={checkoutSteps} currStep={this.props.step}/>
 

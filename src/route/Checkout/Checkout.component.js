@@ -3,6 +3,7 @@ import {
     Checkout as CheckoutMain
 } from "SourceRoute/Checkout/Checkout.component";
 import ProgressBar from "Component/ProgressBar";
+import styles from "./styles.module.css"
 export default class Checkout extends CheckoutMain {
     generateProgressBar(){
         const { checkoutStep } = this.props;
@@ -12,7 +13,7 @@ export default class Checkout extends CheckoutMain {
         const {checkoutStep} = this.props
         console.log(checkoutStep,"-",window.location)
         return (
-            <main block="Checkout">
+            <main block="Checkout" className={styles.cont}>
                 {this.generateProgressBar()}
                 <ContentWrapper
                   wrapperMix={ { block: 'Checkout', elem: 'Wrapper' } }
